@@ -1,0 +1,37 @@
+@use "../utils/_variables.scss";
+@use "../utils/_animation.scss";
+
+footer {
+    background-color: $blue;
+    color: white;
+
+    h1 {
+        animation: fade 2s;
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+
+        img {
+            animation: fade 2s;
+            width: 50px;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+
+.scale {
+    animation: scale 2s linear 1s infinite;
+}
+
+.scaleReverse {
+    animation: scale 2s linear infinite;
+}

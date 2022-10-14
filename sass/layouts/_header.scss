@@ -1,0 +1,50 @@
+@use "../utils/_variables.scss";
+@use "../utils/_animation.scss";
+
+header {
+    font-family: "Passion One", cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 0, 35);
+    color: white;
+    padding: 20px;
+
+    p {
+        animation: fade 2s;
+        @media (min-width: 1024px) {
+            font-size: 36px;
+        }
+    }
+
+    img {
+        animation: fade 2s;
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        margin-right: 20px;
+        @media (min-width: 1024px) {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+    }
+    button {
+        border-radius: 20px;
+        animation: bounce 2s linear infinite;
+        transform: scale(1);
+        color: #fff;
+        background-image: linear-gradient($purple, $darkPurple);
+        @media (min-width: 1024px) {
+            width: 200px;
+            height: 50px;
+        }
+
+        &:hover {
+            animation: none;
+            transform: scale(1.15);
+            opacity: 0.9;
+        }
+    }
+}

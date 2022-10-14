@@ -1,0 +1,77 @@
+@use "../utils/_variables.scss";
+@use "../utils/_animation.scss";
+
+main {
+    font-family: "Exo 2", sans-serif;
+
+    section {
+        padding: 10px;
+        @media (min-width: 1024px) {
+            box-shadow: 10px 10px 20px grey;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        li {
+            font-family: "DynaPuff", cursive;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            width: 80px;
+        }
+    }
+}
+
+.grid {
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+.marginTop {
+    @media (min-width: 1024px) {
+        animation: runLeft 2s;
+    }
+    ul {
+        @media (min-width: 1024px) {
+            margin-top: 77px;
+        }
+    }
+}
+
+.backGroundBlue {
+    background-color: $blue;
+    color: white;
+
+    @media (min-width: 1024px) {
+        animation: runRight 2s;
+    }
+}
+
+.runBottom {
+    @media (min-width: 1024px) {
+        animation: runBottom 2s;
+    }
+}
+
+.flexGif {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fontTxt {
+    font-family: "DynaPuff", cursive;
+}
+
+.fontAnnexe {
+    font-family: "Exo 2", sans-serif;
+}
