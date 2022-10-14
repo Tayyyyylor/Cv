@@ -17,15 +17,27 @@ footer {
         justify-content: space-around;
         padding: 10px;
 
-        img {
+        i {
             animation: fade 2s;
             width: 50px;
+            font-size: 3rem;
 
             &:hover {
                 transform: scale(1.15);
             }
         }
     }
+}
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-linkedin {
+    color: #0961b8;
+}
+
+.fa-instagram {
+    color: #f2095f;
 }
 
 .scale {

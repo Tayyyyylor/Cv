@@ -26,107 +26,6 @@ a {
           animation: rotate 5s linear infinite;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  5% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
-  15% {
-    transform: translateY(0);
-    padding-bottom: 5px;
-  }
-  30% {
-    transform: translateY(-50%);
-  }
-  40% {
-    transform: translateY(0%);
-    padding-bottom: 6px;
-  }
-  50% {
-    transform: translateY(-30%);
-  }
-  70% {
-    transform: translateY(0%);
-    padding-bottom: 7px;
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-    padding-bottom: 8px;
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-    padding-bottom: 9px;
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-    padding-bottom: 9px;
-    opacity: 1;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  5% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
-  15% {
-    transform: translateY(0);
-    padding-bottom: 5px;
-  }
-  30% {
-    transform: translateY(-50%);
-  }
-  40% {
-    transform: translateY(0%);
-    padding-bottom: 6px;
-  }
-  50% {
-    transform: translateY(-30%);
-  }
-  70% {
-    transform: translateY(0%);
-    padding-bottom: 7px;
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-    padding-bottom: 8px;
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-    padding-bottom: 9px;
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-    padding-bottom: 9px;
-    opacity: 1;
-  }
-}
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -159,6 +58,7 @@ a {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -239,20 +139,20 @@ a {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes rotate {
+@-webkit-keyframes runTop {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(100%);
   }
   100% {
-    transform: rotate(359deg);
+    transform: translateY(0);
   }
 }
-@keyframes rotate {
+@keyframes runTop {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(100%);
   }
   100% {
-    transform: rotate(359deg);
+    transform: translateY(0);
   }
 }
 @-webkit-keyframes scale {
@@ -336,10 +236,11 @@ header {
 header p {
   -webkit-animation: fade 2s;
           animation: fade 2s;
+  font-size: 2rem;
 }
 @media (min-width: 1024px) {
   header p {
-    font-size: 36px;
+    font-size: 4rem;
   }
 }
 header img {
@@ -357,77 +258,7 @@ header img {
     border-radius: 100px;
   }
 }
-header button {
-  border-radius: 20px;
-  -webkit-animation: bounce 2s linear infinite;
-          animation: bounce 2s linear infinite;
-  transform: scale(1);
-  color: #fff;
-  background-image: linear-gradient(#a888f2, #743ef0);
-}
-@media (min-width: 1024px) {
-  header button {
-    width: 200px;
-    height: 50px;
-  }
-}
-header button:hover {
-  -webkit-animation: none;
-          animation: none;
-  transform: scale(1.15);
-  opacity: 0.9;
-}
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  5% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
-  15% {
-    transform: translateY(0);
-    padding-bottom: 5px;
-  }
-  30% {
-    transform: translateY(-50%);
-  }
-  40% {
-    transform: translateY(0%);
-    padding-bottom: 6px;
-  }
-  50% {
-    transform: translateY(-30%);
-  }
-  70% {
-    transform: translateY(0%);
-    padding-bottom: 7px;
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-    padding-bottom: 8px;
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-    padding-bottom: 9px;
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-    padding-bottom: 9px;
-    opacity: 1;
-  }
-}
 @keyframes fade {
   0% {
     opacity: 0;
@@ -484,12 +315,12 @@ header button:hover {
     transform: translateY(0);
   }
 }
-@keyframes rotate {
+@keyframes runTop {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(100%);
   }
   100% {
-    transform: rotate(359deg);
+    transform: translateY(0);
   }
 }
 @keyframes scale {
@@ -542,13 +373,26 @@ footer div {
   justify-content: space-around;
   padding: 10px;
 }
-footer div img {
+footer div i {
   -webkit-animation: fade 2s;
           animation: fade 2s;
   width: 50px;
+  font-size: 3rem;
 }
-footer div img:hover {
+footer div i:hover {
   transform: scale(1.15);
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-linkedin {
+  color: #0961b8;
+}
+
+.fa-instagram {
+  color: #f2095f;
 }
 
 .scale {
@@ -561,56 +405,6 @@ footer div img:hover {
           animation: scale 2s linear infinite;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  5% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
-  15% {
-    transform: translateY(0);
-    padding-bottom: 5px;
-  }
-  30% {
-    transform: translateY(-50%);
-  }
-  40% {
-    transform: translateY(0%);
-    padding-bottom: 6px;
-  }
-  50% {
-    transform: translateY(-30%);
-  }
-  70% {
-    transform: translateY(0%);
-    padding-bottom: 7px;
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-    padding-bottom: 8px;
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-    padding-bottom: 9px;
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-    padding-bottom: 9px;
-    opacity: 1;
-  }
-}
 @keyframes fade {
   0% {
     opacity: 0;
@@ -667,12 +461,12 @@ footer div img:hover {
     transform: translateY(0);
   }
 }
-@keyframes rotate {
+@keyframes runTop {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(100%);
   }
   100% {
-    transform: rotate(359deg);
+    transform: translateY(0);
   }
 }
 @keyframes scale {
@@ -771,6 +565,11 @@ main section img {
     -webkit-animation: runBottom 2s;
             animation: runBottom 2s;
   }
+}
+
+.runTop {
+  -webkit-animation: runTop 2s;
+          animation: runTop 2s;
 }
 
 .flexGif {
