@@ -6,6 +6,9 @@ h1 {
     text-align: center;
     margin: 0;
     font-family: "Passion One", cursive;
+    @media (min-width: 1024px) {
+        font-size: 1.7rem;
+    }
 }
 
 button {

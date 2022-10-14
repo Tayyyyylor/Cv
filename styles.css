@@ -7,6 +7,11 @@ h1 {
   margin: 0;
   font-family: "Passion One", cursive;
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
 
 button {
   font-family: "DynaPuff", cursive;
@@ -514,8 +519,17 @@ main section li {
 main section p {
   margin: 0;
 }
-main section img {
+@media (min-width: 1024px) {
+  main section p {
+    font-size: 1.5rem;
+  }
+}
+main img {
   width: 80px;
+}
+
+.align {
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
